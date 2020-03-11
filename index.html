@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="syle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AppTheme | Home</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="row">
+            <div class="logo">
+                <h1><span class="primary-text">App</span>Theme</h1>
+            </div>
+            <div class="menu">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                    <ul class="nav-links">
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--SHOWCASE-->
+    <section id="showcase">
+        <div class="content">
+            <div class="details">
+               <h1>Welcome to <span class="primary-text">App</span>Theme</h1>
+               <p>A Template built with HTML5, CSS3 and Flexboxgird</p>
+            </div>   
+       </div>
+    </section>
+
+    <!--FEATURES-->
+    <section id="features">
+        <div class="heading">
+            <h1>Core features</h1>
+            <p>What's Inculded?</p>
+        </div>
+        <div class="rows">
+                <div class="boxes">
+                    <div class="box">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        <h1>Fully Optimized</h1>
+                        <p>Possimus a quae dolores incid is tenetur</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        <h1>Free Support</h1>
+                        <p>Ratione officiis that cupiditate mollitia</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                        <h1>Free Upgrade</h1>
+                        <P>Placeat perferendis dicta inventore</p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        <h1>Uptime Guarantee</h1>
+                        <p>Cupiditate debitis necessits is fugit</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <h1>Multi-users</h1>
+                        <p>Rerum quos eos dolores molestias</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-plug" aria-hidden="true"></i>
+                        <h1>Plug & Play</h1>
+                        <p>Repudiandae adipisci Aut eaque</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--INFORMATION-->
+    <section id="info">
+        <div class="container">
+            <div class="left">
+                <img src="Images/iphone.png" alt="">
+            </div>
+            <div class="right">
+                <h1>Core Features</h1>
+                <ul class="list">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Fully Optimized</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Free Support</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Free Upgrade</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Uptime Guarantee</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Multi-users</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Plug & Play</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--COMPANY-->
+    <section id="company">
+        <div class="container">
+            <div class="col">
+                <h1>CONTACT US</h1>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> (617) 555-5555</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> Support@AppTheme</li>
+                    <li><i class="fa fa-map"></i> 400 Main, st Boston MA</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>ABOUT US</h1>
+                <P>Corrupti deserunt quia cum beatae porro ad amet nisi voluptates quam aliquam</P>
+            </div>
+            <div class="col">
+                <h1>NEWSLETTER</h1>
+                <P>Sign In for use these some our AppThemes</P>
+                <form>
+                    <input type="text" name="email" id="" placeholder="Enter Email">
+                    <button type="submit" name="button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <section id="footer">
+        <div class="main-footer">
+            <p>Copyright &copy; 2019 | AppTheme</p>
+        </div>
+    </section>
+
+    <!--JavaScript--> 
+    <script>
+            const lines = document.querySelector(".lines");
+            const navlinks = document.querySelector(".nav-links");
+            const links = document.querySelector("nav-links li");
+            lines.addEventListener ("click", () => {
+              navlinks.classList.toggle("open");
+            }); 
+        </script>
+
+</body>
+</html>
